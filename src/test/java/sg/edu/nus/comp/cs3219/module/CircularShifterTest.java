@@ -42,6 +42,7 @@ public class CircularShifterTest {
 		assertEquals(2, afterShiftLineStorage.size());
 
 		assertEquals("Fast and Furious", afterShiftLineStorage.get(0).toString());
+		assertEquals("and Furious Fast", afterShiftLineStorage.get(1).toString());
 		assertEquals("Furious Fast and", afterShiftLineStorage.get(1).toString());
 	}
 
@@ -49,7 +50,6 @@ public class CircularShifterTest {
 	public void test2() {
 		inputLineStorage.addLine("the after");
 		assertEquals(0, afterShiftLineStorage.size());
-
 	}
 
 }
