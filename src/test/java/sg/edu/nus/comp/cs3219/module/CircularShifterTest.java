@@ -39,7 +39,7 @@ public class CircularShifterTest {
 	@Test
 	public void test1() {
 		inputLineStorage.addLine("Fast and Furious");
-		assertEquals(2, afterShiftLineStorage.size());
+		assertEquals(3, afterShiftLineStorage.size());
 
 		assertEquals("Fast and Furious", afterShiftLineStorage.get(0).toString());
 		assertEquals("and Furious Fast", afterShiftLineStorage.get(1).toString());
